@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+ int Fact2(int N) {
+     int res = 1;
+     while (N > 0) {
+          res = res * N;
+         N -= 2;
+     }
+     return res;
+}
+int main()
+{
+    cout << Fact2(6) << endl;
+    cout << Fact2(7);
+
+    return 0; 
+}
