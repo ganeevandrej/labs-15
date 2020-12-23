@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+ void  Quarter (int x, int y) {
+     if ((x > 0) && (y > 0))
+         cout << "1";
+     if ((x < 0) && (y > 0))
+         cout << "2";
+     if ((x < 0) && (y < 0))
+         cout << "3";
+     if ((x > 0) && (y < 0))
+         cout << "4";
+}
+int main()
+{
+    Quarter(3, 2); cout << endl;
+    Quarter(-1, 2); cout << endl;
+    Quarter(-2, -1); cout << endl;
+    Quarter(1, -2);
+
+    return 0; 
+}
